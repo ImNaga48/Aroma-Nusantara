@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "nama": "Kopi Tubruk Asli",
+    "kategori": "Kopi",
+    "harga": 5000,
+    "deskripsi": "Kopi tubruk khas Indonesia, diseduh langsung di cangkir.",
+    "gambar": "assets/menu/kopi-tubruk.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 2,
+    "nama": "Caffe Latte",
+    "kategori": "Kopi",
+    "harga": 15000,
+    "deskripsi": "Espresso dengan susu segar yang lembut.",
+    "gambar": "assets/menu/latte.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 3,
+    "nama": "Teh Tarik",
+    "kategori": "Teh",
+    "harga": 10000,
+    "deskripsi": "Teh tarik manis dengan buih khas.",
+    "gambar": "assets/menu/teh-tarik.jpg",
+    "status": "Kosong"
+  },
+  {
+    "id": 4,
+    "nama": "Red Velvet",
+    "kategori": "Minuman",
+    "harga": 15000,
+    "deskripsi": "Minuman creamy dengan rasa red velvet yang legit.",
+    "gambar": "assets/menu/red-velvet.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 5,
+    "nama": "Pisang Goreng",
+    "kategori": "Camilan",
+    "harga": 10000,
+    "deskripsi": "Pisang goreng renyah dengan topping keju dan cokelat.",
+    "gambar": "assets/menu/pisang-goreng.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 6,
+    "nama": "Kentang Goreng",
+    "kategori": "Camilan",
+    "harga": 10000,
+    "deskripsi": "Kentang goreng crispy dengan saus sambal.",
+    "gambar": "assets/menu/kentang-goreng.jpg",
+    "status": "Kosong"
+  },
+  {
+    "id": 7,
+    "nama": "Nasi Katsu",
+    "kategori": "Makanan",
+    "harga": 20000,
+    "deskripsi": "Nasi hangat dengan chicken katsu crispy dan saus spesial.",
+    "gambar": "assets/menu/nasi-katsu.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 8,
+    "nama": "Nasi Goreng",
+    "kategori": "Makanan",
+    "harga": 15000,
+    "deskripsi": "Nasi goreng khas Aroma Nusantara dengan telur dan kerupuk.",
+    "gambar": "assets/menu/nasi-goreng.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 9,
+    "nama": "Matcha",
+    "kategori": "Teh",
+    "harga": 30000,
+    "deskripsi": "Minuman matcha premium dengan rasa creamy dan segar.",
+    "gambar": "assets/menu/matcha.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 10,
+    "nama": "Lemonade",
+    "kategori": "MINUMAN",
+    "harga": 15000,
+    "deskripsi": "Minuman lemon segar dengan perpaduan rasa manis dan asam.",
+    "gambar": "assets/menu/lemonade.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 11,
+    "nama": "Caramel Macchiato",
+    "kategori": "Kopi",
+    "harga": 20000,
+    "deskripsi": "Espresso, susu, dan sirup karamel dengan foam lembut.",
+    "gambar": "assets/menu/caramel-macchiato.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 12,
+    "nama": "Pancake",
+    "kategori": "Camilan",
+    "harga": 25000,
+    "deskripsi": "Pancake lembut disajikan dengan madu dan butter.",
+    "gambar": "assets/menu/pancake.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 13,
+    "nama": "Butterscotch",
+    "kategori": "Minuman",
+    "harga": 20000,
+    "deskripsi": "Minuman butterscotch creamy dengan aroma karamel yang khas.",
+    "gambar": "assets/menu/butterscotch.jpg",
+    "status": "Tersedia"
+  },
+  {
+    "id": 14,
+    "nama": "Indomie Original",
+    "kategori": "Makanan",
+    "harga": 10000,
+    "deskripsi": "Indomie original hangat dengan cita rasa klasik favorit.",
+    "gambar": "assets/menu/indomie-og.jpg",
+    "status": "Kosong"
+  },
+  {
+    "id": 15,
+    "nama": "Indomie Spesial",
+    "kategori": "Makanan",
+    "harga": 15000,
+    "deskripsi": "Indomie spesial dengan telur, sosis, dan sayuran segar.",
+    "gambar": "assets/menu/indomie-s.jpg",
+    "status": "Tersedia"
+  }
+]
