@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Nusantara</title>
+    <link rel="icon" href="assets/icon/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts untuk tampilan modern -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>Memuat kehangatan...</p>
+    </div>
+
+    <!-- Navigasi -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <img src="assets/logo.png" alt="Logo Aroma Nusantara" class="logo-img">
+                <span class="logo-text">Aroma Nusantara</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Beranda</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#cart" class="nav-link cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <button id="darkModeToggle" class="icon-btn" aria-label="Dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten Utama (SPA Sections) -->
+    <main id="app">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <img src="assets/banner.jpg" alt="Banner Aroma Nusantara" class="hero-banner">
+                <div class="hero-overlay">
+               
+                    <a href="#menu" class="cta-btn">Lihat Menu</a>
+                </div>
+            </div>
+            <div class="info-cards">
+                <div class="info-card glass">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Alamat</h3>
+                    <p id="cafeAddress">Jl. Merdeka No. 99, Jakarta</p>
+                </div>
+                <div class="info-card glass">
+                    <i class="fas fa-clock"></i>
+                    <h3>Jam Operasional</h3>
+                    <p id="cafeHours">Senin - Jumat: 08.00 - 22.00<br>Sabtu - Minggu: 09.00 - 23.00</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank" class="social-icon" id="socialIg"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="social-icon" id="socialFb"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="social-icon" id="socialTiktok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" target="_blank" class="social-icon" id="socialEmail"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section">
+            <h2 class="section-title">Menu Kami</h2>
+            <div class="menu-controls">
+                <input type="text" id="searchInput" class="search-bar" placeholder="Cari menu...">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">Semua</button>
+                    <!-- Kategori akan diisi oleh JavaScript -->
+                </div>
+            </div>
+            <div id="menuGrid" class="menu-grid">
+                <!-- Kartu menu akan dirender di sini -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="section">
+            <h2 class="section-title">Keranjang Belanja</h2>
+            <div id="cartContainer">
+                <div id="cartItems" class="cart-items"></div>
+                <div id="emptyCart" class="empty-cart">
+                    <i class="fas fa-shopping-basket fa-3x"></i>
+                    <p>Keranjangmu kosong. Yuk, pesan sesuatu!</p>
+                    <a href="#menu" class="btn-secondary">Ke Menu</a>
+                </div>
+                <div id="cartSummary" class="cart-summary hidden">
+                    <div class="total-row">
+                        <span>Total Pembayaran</span>
+                        <span id="cartTotal">Rp 0</span>
+                    </div>
+                    <button id="checkoutBtn" class="btn-primary">Lanjutkan ke Pembayaran</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checkout Section -->
+        <section id="checkout" class="section">
+            <h2 class="section-title">Data Pemesan</h2>
+            <form id="checkoutForm" class="checkout-form glass">
+                <div class="form-group">
+                    <label for="customerName">Nama Pemesan</label>
+                    <input type="text" id="customerName" placeholder="Nama Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="tableNumber">Nomor Meja</label>
+                    <input type="text" id="tableNumber" placeholder="Meja No." required>
+                </div>
+                <div class="order-summary">
+                    <h3>Ringkasan Pesanan</h3>
+                    <ul id="checkoutItems" class="checkout-items"></ul>
+                    <p class="total-checkout">Total: <span id="checkoutTotal">Rp 0</span></p>
+                </div>
+                <button type="submit" class="btn-primary">Konfirmasi & Bayar</button>
+                <button type="button" id="backToCartBtn" class="btn-secondary">Kembali ke Keranjang</button>
+            </form>
+        </section>
+
+        <!-- Payment Section -->
+        <section id="payment" class="section">
+            <h2 class="section-title">Pembayaran QRIS</h2>
+            <div class="payment-container glass">
+                <p>Silakan scan QR code berikut untuk membayar:</p>
+                <div class="qr-wrapper">
+                    <img id="qrImage" src="" alt="QR Code Pembayaran" class="qr-code">
+                    <div id="qrFallback" class="qr-fallback hidden">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>QR untuk nominal ini belum tersedia.</p>
+                    </div>
+                </div>
+                <div class="payment-details">
+                    <p>Total Pembayaran: <strong id="paymentTotal">Rp 0</strong></p>
+                    <p>Nama: <span id="paymentName"></span></p>
+                    <p>Meja: <span id="paymentTable"></span></p>
+                    <div id="countdown" class="countdown">
+                        <span id="timer">15:00</span>
+                    </div>
+                </div>
+                <button id="confirmPaymentBtn" class="btn-primary">Konfirmasi Pembayaran</button>
+                <p class="note">* Pembayaran otomatis terverifikasi jika QR telah dipindai</p>
+            </div>
+        </section>
+
+        <!-- Success Section -->
+        <section id="success" class="section">
+            <div class="success-message glass">
+                <i class="fas fa-check-circle fa-4x"></i>
+                <h2>Pesanan Berhasil!</h2>
+                <p>Pesanan Anda sedang diproses. Silakan tunggu di meja Anda.</p>
+                <p id="successOrderId"></p>
+                <a href="#home" class="btn-primary">Kembali ke Beranda</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aroma Nusantara. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

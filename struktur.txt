@@ -1,0 +1,34 @@
+aroma-nusantara/
+├── index.html
+├── style.css
+├── script.js
+├── assets/
+│   ├── logo.png
+│   ├── banner.jpg
+│   ├── background.jpg
+│   ├── menu/
+│   │   ├── kopi-tubruk.jpg
+│   │   ├── latte.jpg
+│   │   ├── teh-tarik.jpg
+│   │   ├── red-velvet.jpg
+│   │   ├── pisang-goreng.jpg
+│   │   └── kentang-goreng.jpg
+│   ├── qr/
+│   │   ├── 5000.png
+│   │   ├── 12000.png
+│   │   ├── 15000.png
+│   │   ├── 25000.png
+│   │   └── 50000.png
+│   └── icon/
+│       └── favicon.png
+├── data/
+│   ├── cafe.json
+│   ├── menu.json
+│   └── contact.json
+├── backend/
+│   ├── config.php
+│   ├── database.php
+│   ├── order.php
+│   ├── save_order.php
+│   └── database.sql
+└── README.md
